@@ -26,6 +26,32 @@
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
       </plugin>
+             
+             <plugin>
+                      <groupId> org.codehaus.cargo </groupId>
+                      <artifactId> cargo-maven3-plugin </artifactId>
+                      <configuration>
+                        <container>
+                                 <containerId> tomcat10x </containerId>
+                                 <type> remote</type>
+                                 
+                          </container>
+                      <configuration>
+                        
+                      
+                      <type> 
+                               runtime
+                      </type>
+                               
+                               
+                               <properties>
+                               <cargo.server.settings> tomcat-server  </cargo.server.settings>
+                               </properties>
+                               
+                               </configuration>
+                                 
+                               </configuration>
+             </plugin>
     </plugins>
   </build>
 
